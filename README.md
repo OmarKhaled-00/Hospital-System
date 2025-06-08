@@ -4,7 +4,7 @@
 ---
 ## 🔧 Embedded Systems Modules:
 ### Autonomous Power and Voltage Control System:
-- Designed to monitor voltage levels and manage power source switching between renewable and backup sources, ensuring energy efficiency and hospital equipment safety.
+- Designed to monitor voltage levels and manage power source switching between renewable and backup sources, ensuring energy efficiency and hospital equipment safety.[Here](https://github.com/OmarKhaled-00/Hospital-System/blob/b0b86dc8f279b3a7eb478d4f2813caad9d9357a1/POWER_SUPPLY-ezgif.com-video-to-gif-converter.gif)
   
 ### Access Control and Limitation System
 - Controls gate and elevator access using IR sensors, ATmega32, DC motors, and PWM — ensures only authorized personnel can enter specific hospital areas.
