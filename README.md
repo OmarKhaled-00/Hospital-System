@@ -5,7 +5,7 @@
 ## 🔧 Embedded Systems Modules:
 ### Autonomous Power and Voltage Control System:
 - Designed to monitor voltage levels and manage power source switching between renewable and backup sources, ensuring energy efficiency and hospital equipment safety.
-[![Watch Video](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://youtu.be/VIDEO_ID)
+<!-- Uploading "POWER_SUPPLY-ezgif.com-video-to-gif-converter.gif"... -->
 
 
   
