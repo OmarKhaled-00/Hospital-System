@@ -3,6 +3,9 @@
 - This project is a comprehensive Hospital Management System built using Embedded Systems and C-based Software Development. It is designed to enhance patient safety, streamline operations, and enable real-time monitoring and communication across hospital facilities.
 ---
 ## 🔧 Embedded Systems Modules:
+### Autonomous Power and Voltage Control System:
+- Designed to monitor voltage levels and manage power source switching between renewable and backup sources, ensuring energy efficiency and hospital equipment safety.
+  
 ### Access Control and Limitation System
 - Controls gate and elevator access using IR sensors, ATmega32, DC motors, and PWM — ensures only authorized personnel can enter specific hospital areas.
 
