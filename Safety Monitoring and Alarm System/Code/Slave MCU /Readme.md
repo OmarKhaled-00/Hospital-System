@@ -55,9 +55,4 @@ The Slave MCU (ATmega32) handles all actuator control operations based on comman
 
 ---
 
-### 🔸 Code Architecture
-- Driver files used for DIO, PORT, SPI, and Timer.
-- Logic separated into utility functions (`*_On()` / `*_Off()`).
-- Uses modular and reusable design structure.
-- Simple control loop processes incoming SPI data and triggers corresponding actuators.
 
