@@ -19,4 +19,4 @@
 ### 🧠 Purpose:
 - This system is ideal for embedded projects that require reliable, noise-free power across multiple voltage levels. It isolates power delivery for different modules, protecting sensitive components and supporting modular embedded development.
 
-  [![Image](https://github.com/user-attachments/assets/4360a459-3dee-413c-9064-8f55f42ec06e)](https://github.com/OmarKhaled-00/Hospital-System/blob/main/POWER_SUPPLY-ezgif.com-video-to-gif-converter.gif/Power-Supply-ezgif.com-video-to-gif-converter.gif)
+ [[![Image](https://github.com/user-attachments/assets/4360a459-3dee-413c-9064-8f55f42ec06e)](https://github.com/OmarKhaled-00/Hospital-System/blob/main/POWER_SUPPLY-ezgif.com-video-to-gif-converter.gif/Power-Supply-ezgif.com-video-to-gif-converter.gif)](https://github.com/OmarKhaled-00/Hospital-System/blob/main/POWER_SUPPLY-ezgif.com-video-to-gif-converter.gif/Power-Supply-ezgif.com-video-to-gif-converter.gif)
