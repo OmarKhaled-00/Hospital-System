@@ -34,4 +34,7 @@
 ### 🧠 Purpose:
 - This module is intended for hospital access automation, helping secure restricted zones like ICUs, operating rooms, or staff-only areas. It enhances physical security, ensures controlled movement, and adds a layer of automation and reliability to facility management.
 
+### Circuit video on proteus [Here](https://www.linkedin.com/posts/omar-khaled-4a85aa271_engineering-mechatronics-embeddedsystems-activity-7201962067405205508-o1Rw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y)
+### Circuit video in Real-World [Here](https://www.linkedin.com/posts/omar-khaled-4a85aa271_engineering-mechatronics-embeddedsystems-activity-7201962434155147265-VC7S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y)
+
 
