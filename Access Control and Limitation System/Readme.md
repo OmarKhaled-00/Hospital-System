@@ -11,10 +11,10 @@
 - One for gate automation
 
 - One for elevator movement
-- - Controlled via the L298N motor driver, with PWM signals at 50% duty cycle for smooth operation.
+ - Controlled via the L298N motor driver, with PWM signals at 50% duty cycle for smooth operation.
 
 - IR Sensors for Entry/Exit Detection:
--- Two infrared sensors detect the presence and direction of movement, ensuring accurate control of door and elevator activity.
+- Two infrared sensors detect the presence and direction of movement, ensuring accurate control of door and elevator activity.
 
 ### Manual Elevator Buttons:
 - Includes UP and DOWN control buttons, allowing authorized users to move between floors.
