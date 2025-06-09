@@ -5,7 +5,7 @@
 ## 🔧 Embedded Systems Modules:
 - Autonomous Power and Voltage Control System [Here](https://github.com/OmarKhaled-00/Hospital-System/tree/main/Autonomous%20Power%20and%20Voltage%20Control%20System%3A)
   
-- Access Control and Limitation System
+- Access Control and Limitation System [Here](https://github.com/OmarKhaled-00/Hospital-System/blob/main/Access%20Control%20and%20Limitation%20System/Readme.md)
 
 - Safety Monitoring and Alarm System
 
