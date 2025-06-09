@@ -3,7 +3,7 @@
 
  *
  *  Created on: Apr 26, 2024
- *      Author: user
+ *      Author: Omar Khaled
  */
 #include"STD_TYPES.h"
 #include"BIT_MATH.h"
