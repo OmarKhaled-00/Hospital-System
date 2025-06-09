@@ -93,8 +93,8 @@
 
 - Timers for PWM Generation
 
-### 🧠 Purpose
-#### Built to enhance hospital safety infrastructure, this system provides:
+## 🧠 Purpose
+### Built to enhance hospital safety infrastructure, this system provides:
 
 - Continuous monitoring of environmental threats.
 
