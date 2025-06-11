@@ -1,4 +1,4 @@
-## 🏥 Smart Login and Reservation System
+## 🏥 Hospital Booking System
 
 ---
 
