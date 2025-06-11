@@ -64,5 +64,7 @@ The **Real-Time Communication and Alert System** enables the **Master MCU (ATmeg
 
 ---
 
+### Video [Here](https://drive.google.com/file/d/1cIK4LhfvrbY6V4GstkTynaeZuTq_GgB2/view)
+
 
 
