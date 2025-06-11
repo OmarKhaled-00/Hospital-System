@@ -63,8 +63,8 @@ static char enteredID[8];
 static char enteredPassword[10];
 static uint8 Login_Counter=0u;
 bool continueLogin = true;
-const char *desired_ip = "192.168.88.157";       // Replace with the desired IP address
-const char *desired_hostname = "DESKTOP-OIUI18M";  // Replace with the desired hostname
+const char *desired_ip = "";       // Replace with the desired IP address
+const char *desired_hostname = "";  // Replace with the desired hostname
 
 
 
