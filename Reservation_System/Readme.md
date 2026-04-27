@@ -1,9 +1,11 @@
-## 🏥 Hospital Booking System
+## 🏥 Hospital Management System (C Language Project)
 
 ---
 
 ### 🔸 Overview
-The **Smart Login and Reservation System** is a secure hospital management module developed in **C**, designed to authenticate users (Doctors, Patients, IT Admins) and manage appointment reservations with enhanced security features.
+The **Hospital Management System** is a secure, role-based console application developed in **C programming language**, designed to simulate real hospital operations including patient management, appointment scheduling, operation room allocation, and multi-level authentication.
+
+The system also integrates **basic security mechanisms such as IP/hostname verification, intrusion detection simulation, and fake interface redirection** to demonstrate cybersecurity concepts in embedded-style software design.
 
 ---
 
@@ -11,63 +13,98 @@ The **Smart Login and Reservation System** is a secure hospital management modul
 
 | Feature                                | Description                                                                 |
 |----------------------------------------|-----------------------------------------------------------------------------|
-| 🔐 Secure Login                        | Unique IDs and passwords for all user roles                                |
-| 🧑‍⚕️ Role-Based Access                 | Doctor, Patient, and Admin functionalities are separated                    |
-| 📅 Reservation Management              | Schedule and cancel appointments securely                                  |
-| 🛡️ Intrusion Detection                 | Detects unauthorized app access via fake interfaces                        |
-| 🌐 IP Tracking                         | Stores usage IP address of every connected PC                              |
-| 🧪 Fake Application Redirection        | Forwards suspicious access attempts to a decoy app for data collection     |
+| 🔐 Secure Authentication System        | Auto-generated IDs and passwords for Users, Doctors, and IT Admins         |
+| 🧑‍⚕️ Role-Based Access Control         | Separate functionalities for Patients, Doctors, and IT Administrators      |
+| 📅 Patient Reservation System          | Add, edit, cancel, and view hospital appointments                          |
+| 🏨 Operation Room Management           | Reserve and monitor operation rooms with full patient & doctor details     |
+| 🌐 IP & Hostname Verification          | Validates system access based on machine identity                          |
+| 🛡️ Intrusion Detection System          | Detects suspicious login attempts and triggers security response           |
+| 🧪 Fake Security Page                   | Redirects unauthorized access to a decoy interface                         |
+| 📊 Access Limitation Mechanism         | Blocks system after multiple failed login attempts                         |
 
 ---
 
 ### 🔸 User Roles
 
-#### 👨‍⚕️ Doctors
-- View upcoming appointments
-- Access patient records (if implemented)
-- Modify availability schedule
+#### 👨‍⚕️ Doctor Module
+- View assigned operations and schedules  
+- Access patient operation details  
+- Check personal operation timetable  
 
-#### 👨‍💻 IT Admin
-- Monitor user activity
-- View access logs and IP tracking
-- Manage fake interface system
+---
+
+#### 👩‍💻 Patient / User Module
+- View reservation information  
+- Check appointment schedules  
+- Access hospital services menu  
+
+---
+
+#### 🛡️ IT Administrator Module
+- Generate and manage system credentials  
+- Monitor login attempts and system security  
+- Handle intrusion detection responses  
+- Control system-wide access permissions  
 
 ---
 
 ### 🔸 Security Mechanisms
 
-| Mechanism                   | Description                                               |
-|-----------------------------|-----------------------------------------------------------|
-| 🔑 Unique ID Authentication | Each user type has a unique identifier-password pair      |
-| 🧩 Encapsulation            | Sensitive logic is modularized for code security          |
-| 🕵️‍♂️ Fake Interface Trap    | Misused apps redirect to decoy environment                |
-| 🌍 IP Logger                | Logs each access point's IP to flag potential threats     |
+| Mechanism                     | Description                                                                 |
+|------------------------------|-----------------------------------------------------------------------------|
+| 🔑 Role-Based Authentication | Each user type has unique ID & password validation                         |
+| 🌍 IP & Hostname Check       | Ensures system runs only on authorized machine                             |
+| 🚨 Login Attempt Limiter     | Locks system after 3 failed login attempts                                 |
+| 🧠 Fake System Redirection   | Sends attackers to decoy interface for simulation purposes                 |
+| 🕵️ Malware Simulation       | Simulates security scanning and blocking behavior                          |
 
 ---
 
-### 🔸 Application Architecture
+### 🔸 System Architecture
 
-- **Language:** C (Console-based UI)
-- **Design Pattern:** Modular with layered security functions
-- **Input/Output:** Keyboard + Terminal screen
-- **Data Handling:** File-based record system (can be upgraded to database)
+- **Language:** C (Structured Programming)
+- **Platform:** Windows (MinGW / GCC Compiler)
+- **Networking API:** Winsock2 (IP & Hostname detection)
+- **Design Style:**
+  - Modular functions
+  - Struct-based data modeling
+  - Role-based system flow
+- **Data Handling:** In-memory storage using arrays (upgradeable to database)
 
 ---
 
+### 🔸 Core Functional Modules
+
+- Patient Information Management  
+- Appointment Scheduling System  
+- Operation Room Booking System  
+- Login & Verification System  
+- Security Monitoring System  
+- Doctor Schedule Tracking  
+
+---
 
 ### 🧠 Future Improvements
 
-- 🔄 Integration with hospital database (e.g., SQLite or MySQL)
-- 📱 GUI version using GTK or a web-based frontend
-- 🧩 Multi-factor authentication (MFA) system
-- 🌐 Online appointment access via ESP8266 + web server
+- 🗄️ Database integration (MySQL / SQLite)
+- 🌐 Web-based dashboard for remote access
+- 📱 GUI version using Qt or web frontend (React)
+- 🔐 Password encryption (hashing + salting)
+- 📡 Real-time hospital network communication (IoT/ESP8266)
+- 👨‍⚕️ Advanced role permissions (RBAC system upgrade)
 
 ---
 
- ## 💡 **Note:** This system is designed for educational and prototype-level use. Security should be upgraded for production deployment.
+### 📌 Note
+This project is developed for **educational and academic purposes**, demonstrating:
+- Embedded-style C programming
+- System-level thinking
+- Basic cybersecurity simulation
+- Real-world hospital workflow modeling
 
 ---
-### Code [Here](https://github.com/OmarKhaled-00/Hospital-System/tree/main/Reservation_System/Code)
 
+### 🔗 Code Repository
+👉 [View Full Source Code](https://github.com/OmarKhaled-00/Hospital-System/tree/main/Reservation_System/Code)
 
-
+---
