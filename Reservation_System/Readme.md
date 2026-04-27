@@ -69,7 +69,7 @@ The system also integrates **basic security mechanisms such as IP/hostname verif
   - Modular functions
   - Struct-based data modeling
   - Role-based system flow
-- **Data Handling:** In-memory storage using arrays (upgradeable to database)
+- **Data Handling:** In-memory storage using arrays (can be upgraded to database)
 
 ---
 
@@ -88,17 +88,16 @@ The system also integrates **basic security mechanisms such as IP/hostname verif
 
 - 🗄️ Database integration (MySQL / SQLite)
 - 🌐 Web-based dashboard for remote access
-- 📱 GUI version using Qt or web frontend (React)
+- 📱 GUI version using Qt or React
 - 🔐 Password encryption (hashing + salting)
-- 📡 Real-time hospital network communication (IoT/ESP8266)
-- 👨‍⚕️ Advanced role permissions (RBAC system upgrade)
+- 📡 Real-time hospital network communication (IoT / ESP8266)
+- 👨‍⚕️ Advanced role-based access control (RBAC upgrade)
 
 ---
 
+## 🚀 How to Use the System
 
-### 🚀 How to Use the System
-
-The system follows a **secure hierarchical login flow**, meaning access is controlled in stages to ensure maximum security.
+The system follows a **secure hierarchical login flow**, where access is strictly controlled to ensure system security.
 
 ---
 
@@ -106,72 +105,23 @@ The system follows a **secure hierarchical login flow**, meaning access is contr
 
 👉 The system **CANNOT be accessed by Doctors or Users unless the IT Administrator logs in first.**
 
-This means:
-- The **IT Admin must log in first**
-- Only after IT authentication, the system allows access to:
+- The IT Admin must log in first  
+- Only after successful IT authentication, the system unlocks:
   - 👨‍⚕️ Doctors
   - 🧑‍💻 Users (Patients)
 
 ---
 
-### 🪜 Step-by-Step Usage Flow
+## 🌐 System Startup Security Requirement (VERY IMPORTANT)
 
-#### 1️⃣ Start the Application
-- Run the compiled `.exe` file
-- The system will perform an **IP & hostname verification**
+Before compiling and running the application, you MUST configure the authorized machine identity inside the source code.
 
 ---
 
-#### 2️⃣ IT Administrator Login (MANDATORY FIRST STEP)
-- Enter:
-  - IT Admin ID
-  - Password
-- If login is successful:
-  - System permissions are activated
-  - User and Doctor accounts become accessible
-  - Access control system is initialized
+### ⚠️ Required Setup Before Compilation
 
-⚠️ If IT Admin does NOT log in:
-- System will remain restricted
-- Other users cannot access the system
+Edit the following values in the source code:
 
----
-
-#### 3️⃣ User / Doctor Login
-After IT Admin authentication:
-- Doctors can log in to view operations and schedules
-- Users can access:
-  - Patient reservation system
-  - Appointment details
-
----
-
-### 🛡️ Security Behavior Summary
-
-| Condition | System Behavior |
-|----------|----------------|
-| IT Admin not logged in | ❌ Access blocked for all users |
-| Wrong login attempts | 🚨 Security counter activated |
-| Multiple failures | 🔒 System locks and triggers security mode |
-| Valid IT Admin login | ✅ System unlocks role-based access |
-
----
-
-### 🧠 System Logic Concept
-
-This design follows a **hierarchical security model**:
-
-
-### 📌 Note
-This project is developed for **educational and academic purposes**, demonstrating:
-- Embedded-style C programming
-- System-level thinking
-- Basic cybersecurity simulation
-- Real-world hospital workflow modeling
-
----
-
-### 🔗 Code Repository
-👉 [View Full Source Code](https://github.com/OmarKhaled-00/Hospital-System/tree/main/Reservation_System/Code)
-
----
+```c
+const char *desired_ip = "YOUR_IP_HERE";
+const char *desired_hostname = "YOUR_HOSTNAME_HERE";
