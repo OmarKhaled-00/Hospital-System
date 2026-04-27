@@ -95,6 +95,73 @@ The system also integrates **basic security mechanisms such as IP/hostname verif
 
 ---
 
+
+### 🚀 How to Use the System
+
+The system follows a **secure hierarchical login flow**, meaning access is controlled in stages to ensure maximum security.
+
+---
+
+### 🔐 ⚠️ IMPORTANT LOGIN RULE
+
+👉 The system **CANNOT be accessed by Doctors or Users unless the IT Administrator logs in first.**
+
+This means:
+- The **IT Admin must log in first**
+- Only after IT authentication, the system allows access to:
+  - 👨‍⚕️ Doctors
+  - 🧑‍💻 Users (Patients)
+
+---
+
+### 🪜 Step-by-Step Usage Flow
+
+#### 1️⃣ Start the Application
+- Run the compiled `.exe` file
+- The system will perform an **IP & hostname verification**
+
+---
+
+#### 2️⃣ IT Administrator Login (MANDATORY FIRST STEP)
+- Enter:
+  - IT Admin ID
+  - Password
+- If login is successful:
+  - System permissions are activated
+  - User and Doctor accounts become accessible
+  - Access control system is initialized
+
+⚠️ If IT Admin does NOT log in:
+- System will remain restricted
+- Other users cannot access the system
+
+---
+
+#### 3️⃣ User / Doctor Login
+After IT Admin authentication:
+- Doctors can log in to view operations and schedules
+- Users can access:
+  - Patient reservation system
+  - Appointment details
+
+---
+
+### 🛡️ Security Behavior Summary
+
+| Condition | System Behavior |
+|----------|----------------|
+| IT Admin not logged in | ❌ Access blocked for all users |
+| Wrong login attempts | 🚨 Security counter activated |
+| Multiple failures | 🔒 System locks and triggers security mode |
+| Valid IT Admin login | ✅ System unlocks role-based access |
+
+---
+
+### 🧠 System Logic Concept
+
+This design follows a **hierarchical security model**:
+
+
 ### 📌 Note
 This project is developed for **educational and academic purposes**, demonstrating:
 - Embedded-style C programming
