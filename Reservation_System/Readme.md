@@ -24,6 +24,31 @@ The system also integrates **basic security mechanisms such as IP/hostname verif
 
 ---
 
+### 🔐 System Credentials (For Testing)
+
+#### 🛡️ IT Administrator
+- **ID:** `ITAD001`  
+- **Password:** `admin123`
+
+👉 When the IT Administrator successfully logs in:
+- The system unlocks full access control
+- A generated list of **User and Doctor credentials** is displayed
+- The administrator can use these credentials to test system roles
+
+---
+
+#### 👨‍⚕️ Sample Doctor Account
+- **ID:** `DOC021`  
+- **Password:** `$@zc-u`
+
+---
+
+#### 🧑‍💻 Sample User Account
+- **ID:** `USR001`  
+- **Password:** `m!Tr)F`
+
+---
+
 ### 🔸 User Roles
 
 #### 👨‍⚕️ Doctor Module
@@ -41,10 +66,10 @@ The system also integrates **basic security mechanisms such as IP/hostname verif
 ---
 
 #### 🛡️ IT Administrator Module
-- Generate and manage system credentials  
-- Monitor login attempts and system security  
-- Handle intrusion detection responses  
-- Control system-wide access permissions  
+- Must login first before any system access is allowed  
+- Generates and displays all user and doctor credentials  
+- Monitors login attempts and system security  
+- Handles intrusion detection and system protection  
 
 ---
 
@@ -60,44 +85,9 @@ The system also integrates **basic security mechanisms such as IP/hostname verif
 
 ---
 
-### 🔸 System Architecture
+### 🚀 How to Use the System
 
-- **Language:** C (Structured Programming)
-- **Platform:** Windows (MinGW / GCC Compiler)
-- **Networking API:** Winsock2 (IP & Hostname detection)
-- **Design Style:**
-  - Modular functions
-  - Struct-based data modeling
-  - Role-based system flow
-- **Data Handling:** In-memory storage using arrays (can be upgraded to database)
-
----
-
-### 🔸 Core Functional Modules
-
-- Patient Information Management  
-- Appointment Scheduling System  
-- Operation Room Booking System  
-- Login & Verification System  
-- Security Monitoring System  
-- Doctor Schedule Tracking  
-
----
-
-### 🧠 Future Improvements
-
-- 🗄️ Database integration (MySQL / SQLite)
-- 🌐 Web-based dashboard for remote access
-- 📱 GUI version using Qt or React
-- 🔐 Password encryption (hashing + salting)
-- 📡 Real-time hospital network communication (IoT / ESP8266)
-- 👨‍⚕️ Advanced role-based access control (RBAC upgrade)
-
----
-
-## 🚀 How to Use the System
-
-The system follows a **secure hierarchical login flow**, where access is strictly controlled to ensure system security.
+The system follows a **secure hierarchical login flow**.
 
 ---
 
@@ -105,22 +95,45 @@ The system follows a **secure hierarchical login flow**, where access is strictl
 
 👉 The system **CANNOT be accessed by Doctors or Users unless the IT Administrator logs in first.**
 
-- The IT Admin must log in first  
-- Only after successful IT authentication, the system unlocks:
-  - 👨‍⚕️ Doctors
-  - 🧑‍💻 Users (Patients)
+- IT Admin must log in first (`ITAD001 / admin123`)
+- After successful login:
+  - System displays all generated credentials
+  - Doctors and Users can then log in using provided accounts
 
 ---
 
-## 🌐 System Startup Security Requirement (VERY IMPORTANT)
+### 🪜 Step-by-Step Flow
 
-Before compiling and running the application, you MUST configure the authorized machine identity inside the source code.
+#### 1️⃣ Start the Application
+- Run the compiled `.exe` file
+- System performs IP & hostname verification
 
 ---
 
-### ⚠️ Required Setup Before Compilation
+#### 2️⃣ IT Administrator Login (MANDATORY FIRST STEP)
+- Enter:
+  - ID: `ITAD001`
+  - Password: `admin123`
 
-Edit the following values in the source code:
+✔ If successful:
+- System unlocks full functionality
+- Displays all User & Doctor credentials
+
+---
+
+#### 3️⃣ User / Doctor Login
+After IT Admin authentication:
+- Doctors access operation schedules
+- Users access:
+  - Reservations
+  - Appointment information
+
+---
+
+
+### 🌐 System Startup Security Requirement
+
+Before compiling and running the system, you MUST configure:
 
 ```c
 const char *desired_ip = "YOUR_IP_HERE";
